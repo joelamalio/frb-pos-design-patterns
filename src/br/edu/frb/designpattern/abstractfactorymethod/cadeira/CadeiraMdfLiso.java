@@ -13,7 +13,7 @@ import br.edu.frb.designpattern.abstractfactorymethod.peca.cadeira.RecostoCadeir
  *
  * @author Brunomsc
  */
-public class CadeiraMdfLiso extends Cadeira {
+public class CadeiraMdfLiso extends CadeiraMovel {
 
     public CadeiraMdfLiso() {
         System.out.println("\nConstruindo CadeiraMdfLiso\n\n");

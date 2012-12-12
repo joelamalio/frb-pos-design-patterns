@@ -11,7 +11,7 @@ import br.edu.frb.designpattern.abstractfactorymethod.peca.guardaroupa.PortaAB;
  */
 public interface GuardaRoupa {
 
-    // 4 Factory Methods
+    // Factory Methods
     public abstract PortaAB criarPorta();
     public abstract GavetaAB criarGaveta();
     public abstract CabideiroAB criarCabideiro();

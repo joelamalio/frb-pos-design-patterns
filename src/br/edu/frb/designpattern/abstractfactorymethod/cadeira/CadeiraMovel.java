@@ -9,7 +9,7 @@ import br.edu.frb.designpattern.abstractfactorymethod.peca.cadeira.RecostoCadeir
  *
  * @author Brunomsc
  */
-public abstract class Cadeira implements br.edu.frb.designpattern.abstractfactorymethod.moveis.Cadeira{
+public abstract class CadeiraMovel implements br.edu.frb.designpattern.abstractfactorymethod.moveis.Cadeira{
     
     private EstruturaCadeiraAB estruturaCadeira;
     private PeCadeiraAB peCadeira1;
@@ -19,7 +19,7 @@ public abstract class Cadeira implements br.edu.frb.designpattern.abstractfactor
     private BaseCadeiraAB baseCadeira;
     private RecostoCadeiraAB recostoCadeira;
 
-    public Cadeira() {
+    public CadeiraMovel() {
         estruturaCadeira = criarEstruturaCadeira();
         peCadeira1 = criarPeCadeira();
         peCadeira2 = criarPeCadeira();

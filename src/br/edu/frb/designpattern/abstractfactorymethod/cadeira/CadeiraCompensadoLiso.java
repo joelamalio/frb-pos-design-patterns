@@ -13,7 +13,7 @@ import br.edu.frb.designpattern.abstractfactorymethod.peca.cadeira.RecostoCadeir
  *
  * @author Brunomsc
  */
-public class CadeiraCompensadoLiso extends Cadeira {
+public class CadeiraCompensadoLiso extends CadeiraMovel {
 
     public CadeiraCompensadoLiso() {
         System.out.println("\nConstruindo CadeiraCompensadoLiso\n\n");
