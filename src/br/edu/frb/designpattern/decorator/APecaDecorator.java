@@ -5,25 +5,19 @@ import br.edu.frb.designpattern.decorator.material.TipoMaterial;
 /**
  * @author antonio
  */
-public abstract class APecaDecorator {
+public abstract class APecaDecorator extends AMovel {
 
     private TipoMaterial material;
     protected AMovel movel;
-    protected String descricao;
 
     public APecaDecorator(TipoMaterial material, AMovel movel) {
         this.material = material;
         this.movel = movel;
     }
 
-    public abstract Double getPreco();
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
+    @Override
     public String getDescricao() {
-        return movel.getDescricao() + " , com " + descricao + "de " + material.toString();
+        return movel.getDescricao() + " , com " + descricao + " de " + material.toString();
     }
 
     public TipoMaterial getMaterial() {

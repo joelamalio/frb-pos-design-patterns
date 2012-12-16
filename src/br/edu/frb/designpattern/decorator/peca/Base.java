@@ -1,14 +1,14 @@
-package br.edu.frb.designpattern.decorator.peca.mesa;
+package br.edu.frb.designpattern.decorator.peca;
 
 import br.edu.frb.designpattern.decorator.AMovel;
 import br.edu.frb.designpattern.decorator.APecaDecorator;
 import br.edu.frb.designpattern.decorator.material.TipoMaterial;
 
-public abstract class Lugar extends APecaDecorator {
+public class Base extends APecaDecorator {
 
-    public Lugar(TipoMaterial material, AMovel movel) {
+    public Base(TipoMaterial material, AMovel movel) {
         super(material, movel);
-        setDescricao("Lugar");
+        setDescricao("Base");
     }
 
     @Override
@@ -16,13 +16,13 @@ public abstract class Lugar extends APecaDecorator {
         Double custo = movel.getPreco();
         switch (getMaterial()) {
             case COMPENSADO:
-                return custo + 5d;
+                return custo + 40d;
             case MDF:
-                return custo + 10d;
+                return custo + 60d;
             case MADEIRA_DE_LEI:
-                return custo + 15d;
+                return custo + 80d;
             default:
-                return custo + 0d;
+                throw new RuntimeException("Tipo de material não definido");
         }
     }
 }
