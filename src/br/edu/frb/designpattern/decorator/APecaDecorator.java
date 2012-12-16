@@ -17,7 +17,7 @@ public abstract class APecaDecorator extends AMovel {
 
     @Override
     public String getDescricao() {
-        return movel.getDescricao() + " , com " + descricao + " de " + material.toString();
+        return movel.getDescricao() + " , com " + super.getDescricao() + " de " + material.toString();
     }
 
     public TipoMaterial getMaterial() {

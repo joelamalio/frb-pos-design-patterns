@@ -6,7 +6,7 @@ package br.edu.frb.designpattern.decorator;
  */
 public abstract class AMovel {
 
-    public String descricao = "Movel abstrato";
+    private String descricao = "Movel abstrato";
 
     public abstract Double getPreco();
 
